@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic');
 
@@ -9,17 +8,78 @@
   box-sizing: border-box;
 }
 
+
 html, body {
   height: 100%;
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(0, 0, 0, 0.8);
+  background-color: #f5f7fa;
 }
 
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
+h1 {
+  font-size: 36px;
+  margin: 40px 0 20px;
+  font-family: 'Yeseva One';
+}
+
+h2 {
+  font-size: 32px;
+  margin: 30px 0 15px;
+  font-family: 'Yeseva One';
+}
+
+h3 {
+  font-size: 28px;
+  margin: 25px 0 10px;
+  font-family: 'Yeseva One';
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+
+header, footer {
+  background-color: #22177A;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: #22177A;
+  padding: 10px;
+  gap: 20px;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header a,
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
 
 main {
   display: flex;
@@ -27,11 +87,17 @@ main {
   flex: auto;
 }
 
+
 article {
   flex: 2;
   overflow-y: auto;
   padding: 50px 15px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 aside {
   flex: 1;
@@ -48,111 +114,12 @@ aside p {
   color: black;
 }
 
-header, footer {
-  background-color: #22177A;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  
-
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-header a, footer a {
-  color: white;
-  text-decoration: none;
-}
-
-h1 { font-size: 36px; margin: 40px 0 20px; font-family: 'Yeseva One'; }
-h2 { font-size: 32px; margin: 30px 0 15px; font-family: 'Yeseva One'; }
-h3 { font-size: 28px; margin: 25px 0 10px; font-family: 'Yeseva One'; }
-p   { margin-bottom: 15px; }
-
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 18px;
-}
-.alxfotoo {
-  width: 200px;
-}
-
-th, td {
-  border: 1px solid #333;
-  padding: 12px;
-}
-
-/* Responsive for mobile */
-@media (max-width: 800px) {
-  body {
-    display: block;
-  }
-
-  main {
-    display: block;
-  }
-
-  header ul {
-    flex-direction: column;
-  }
-}
-
-
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-right: 20px;
-}
-
-
-body {
-  background-color: #f5f7fa;
-  color: #222;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-
-header ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  background-color: #22177A;
-  padding: 10px;
-}
-
-header li {
-  margin-right: 20px;
-}
-
-header a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-
-article {
-  background-color: white;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
+  font-size: 18px;
 }
 
 th, td {
@@ -171,14 +138,30 @@ tr:nth-child(even) {
 }
 
 
+.alxfotoo {
+  width: 200px;
+}
+
+
 footer {
-  background-color: #22177A;
-  color: white;
   text-align: center;
   padding: 15px 10px;
   margin-top: 40px;
 }
+
 footer a {
   color: #FFD700;
   text-decoration: underline;
+}
+
+
+@media (max-width: 800px) {
+  body,
+  main {
+    display: block;
+  }
+
+  header ul {
+    flex-direction: column;
+  }
 }
