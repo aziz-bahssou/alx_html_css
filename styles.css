@@ -1,8 +1,8 @@
-/* Import fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic');
 
-/* Reset & base */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,6 @@ html, body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* Flex layout */
 body {
   display: flex;
   flex-direction: column;
@@ -49,12 +48,13 @@ aside p {
   color: black;
 }
 
-/* Header & Footer */
 header, footer {
   background-color: #22177A;
   color: white;
   padding: 1rem;
   text-align: center;
+  
+
 }
 
 header ul {
@@ -69,17 +69,19 @@ header a, footer a {
   text-decoration: none;
 }
 
-/* Typography */
 h1 { font-size: 36px; margin: 40px 0 20px; font-family: 'Yeseva One'; }
 h2 { font-size: 32px; margin: 30px 0 15px; font-family: 'Yeseva One'; }
 h3 { font-size: 28px; margin: 25px 0 10px; font-family: 'Yeseva One'; }
 p   { margin-bottom: 15px; }
 
-/* Table */
+
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 18px;
+}
+.alxfotoo {
+  width: 200px;
 }
 
 th, td {
@@ -100,4 +102,83 @@ th, td {
   header ul {
     flex-direction: column;
   }
+}
+
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+
+body {
+  background-color: #f5f7fa;
+  color: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: #22177A;
+  padding: 10px;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+article {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #22177A;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+footer {
+  background-color: #22177A;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+}
+footer a {
+  color: #FFD700;
+  text-decoration: underline;
 }
