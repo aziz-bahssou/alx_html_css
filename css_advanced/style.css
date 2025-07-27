@@ -1,0 +1,370 @@
+* ,
+::before
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+      background: url(pics/Object.png) no-repeat;
+    
+    background-position: cover;
+    background-size: 100%; 
+                       
+    font-size: 16px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px 10px 100px;
+}
+nav img{
+    width: 10rem ;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    list-style : none;
+    
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.main{
+    display: flex;
+
+    
+}
+.for-free{
+    text-align: center;   
+}
+.for-free h1{
+    flex-direction:column;
+    
+    font-size: 4rem;
+    font-weight: 600;
+}
+.tags{
+    display: flex;
+    justify-content: center;
+    flex-direction:row ; 
+    gap: 3rem;
+    margin: 0.8rem 0 ;  
+}
+.tags span{
+    font-size: 1.1rem;
+    margin-bottom: 1rem ;
+}
+.for-free button{
+    border: none;
+    background-color: rgba(194, 113, 255, 1);
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 2.7rem;
+    box-shadow: 0 0 1.8rem 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 8rem;
+}
+
+.the-pros h2{
+    display: flex;
+    justify-content: center;
+    word-spacing: 0.2rem;    
+}
+.cards{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 9.5rem;
+      
+}
+.card{
+    display: flex;
+    width: 9.5rem;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+.cards img{
+    width: 8em;
+}
+.card h3{
+    font-size: 0.8 rem;
+    margin-bottom: -0.2rem;
+}
+.weather{
+    margin-top: 5rem;
+  
+    background-color: rgba(194, 113, 255, 1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+.weather-img img{
+    width: 9rem ;
+    margin-right: 3rem;
+
+}
+.weather blockquote{
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+
+.cadrss {
+    margin-top: 4rem;
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff;
+  flex-direction: row;
+}
+
+.cadrss h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.cadrss h2 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+
+.cadrss {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cardd {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  
+  overflow: hidden;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.cardd img:first-child {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.cardd h3 {
+  font-size: 18px;
+  margin: 15px 0 5px;
+}
+
+.cardd p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+
+.cardd > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cardd h4 {
+  font-size: 14px;
+  color: #c271ff;
+  font-weight: 500;
+}
+
+
+.star {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  color: #c271ff;
+  font-size: 14px;
+}
+
+.cardd > p:last-child {
+  font-size: 13px;
+  color: #888;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+.star i {
+  color: #c271ff;
+}
+.membership-section {
+  background-color: #06142E;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.membership-title span {
+  color: #B35CFF;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.membership-card {
+  width: 200px;
+}
+
+.membership-card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.membership-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.membership-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.membership-button {
+  padding: 10px 30px;
+  background: linear-gradient(to right, #d186ff, #a754ff);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.membership-button:hover {
+  opacity: 0.8;
+}
+.faq-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  letter-spacing: 3px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.faq-answer {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer {
+  background-color: #0c1b2a; /* لون داكن */
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.footer-socials i {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-socials i:hover {
+  color: #f0c040; /* لون عند hover */
+}
+
+.footer-copy {
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
